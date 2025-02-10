@@ -149,6 +149,10 @@ app.post("/identify", async (req: any, res: any) => {
   }
 });
 
+app.get("/identify", async (res: any) =>{
+  return res.json({message: "Welcome to the identify API"})
+})
+
 app.listen(3000, () => {
   console.log("Server running on http://localhost:3000");
 });
